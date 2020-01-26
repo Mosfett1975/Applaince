@@ -7,12 +7,12 @@ public class Applainces {
         Devices microwave = new Devices(TypeOfDevice.Microwave, 1500, 10, true, true);
         Devices stove = new Devices(TypeOfDevice.STOVE, 7000, 15, true, true);
 
-        Devices[] dec = new Devices[4];
-        dec[0] = tvSet;
-        dec[1] = deskTop;
-        dec[2] = microwave;
-        dec[3] = stove;
-        return dec;
+        Devices[] dev = new Devices[4];
+        dev[0] = tvSet;
+        dev[1] = deskTop;
+        dev[2] = microwave;
+        dev[3] = stove;
+        return dev;
     }
 
 }
