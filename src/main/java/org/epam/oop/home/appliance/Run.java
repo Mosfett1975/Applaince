@@ -1,9 +1,9 @@
-package devices;
+package org.epam.oop.home.appliance;
 
-import devices.Sort.SortingByKitchen;
-import devices.Sort.SortingByPower;
-import devices.Sort.SortingByStateOfDevice;
-import devices.Sort.SortingByWeight;
+import org.epam.oop.home.appliance.sort.of.appliance.SortingByPower;
+import org.epam.oop.home.appliance.sort.of.appliance.SortingByKitchen;
+import org.epam.oop.home.appliance.sort.of.appliance.SortingByStateOfDevice;
+import org.epam.oop.home.appliance.sort.of.appliance.SortingByWeight;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ public class Run {
 
     public static void main(String[] args) {
 
-        Devices[] dev = Applainces.getDevices();
+        Appliance[] dev = Appliance.getDevices();
 
         System.out.println("Сортировка приборов по мощности");
         Arrays.sort(dev, new SortingByPower());
