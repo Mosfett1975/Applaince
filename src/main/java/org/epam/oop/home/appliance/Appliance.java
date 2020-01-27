@@ -25,7 +25,7 @@ public class Appliance extends Device{
                 3, false, false);
         Appliance deskTop = new Appliance(TypeOfDevice.COMPUTER, "AMD K-6 Desktop",1000,
                 8, true, false);
-        Appliance laptop = new Appliance(TypeOfDevice.COMPUTER, "SONY VAIO Tap 11",300,
+        Appliance laptop = new Appliance(TypeOfDevice.COMPUTER, "Laptop SONY VAIO Tap 11",300,
                 2, false, false);
         Appliance microwave = new Appliance(TypeOfDevice.MICROWAVE, "Midea AM820CMF",1500,
                 10, true, true);
@@ -48,4 +48,8 @@ public class Appliance extends Device{
                 ANSI_BLUE + "Weight:" + weightOfAppliance + "\t" + ANSI_RED + "Device is On?:" + stateOfAppliance + "\t"
                 + ANSI_CYAN + "Device is kitchen?:" + kitchenAppliance;
     }
+
+
+
 }
+

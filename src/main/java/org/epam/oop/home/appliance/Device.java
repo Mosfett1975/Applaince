@@ -14,6 +14,7 @@ public class Device implements IDevice {
     private boolean stateOfAppliance;
     private boolean kitchenAppliance;
 
+
     public Device(TypeOfDevice typeOfDevice, int powerOfAppliance, int weightOfAppliance, boolean stateOfAppliance,
                   boolean kitchenAppliance) {
         super();
@@ -60,6 +61,7 @@ public class Device implements IDevice {
     @Override
     public Device clone() throws CloneNotSupportedException {
         return (Device) super.clone();
-
     }
+
+
 }

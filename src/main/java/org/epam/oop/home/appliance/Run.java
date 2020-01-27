@@ -9,8 +9,8 @@ import java.util.Arrays;
 
 public class Run {
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         Appliance[] dev = Appliance.getDevices();
 
         System.out.println("Сортировка приборов по мощности");
@@ -25,6 +25,9 @@ public class Run {
         System.out.println("\n Сортировка приборов по принадлежности к кухонным приборам");
         Arrays.sort(dev, new SortingByKitchen());
         Arrays.asList(dev).forEach(System.out::println);
+        System.out.println(GetConsumedPower.getPower(dev));
+
+
     }
 
 

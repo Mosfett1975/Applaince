@@ -1,20 +1,28 @@
 package org.epam.oop.home.appliance;
 
-public interface IDevice extends Comparable <IDevice>{
+public interface IDevice extends Comparable<IDevice> {
 
-    /** Мощность устройства**/
+    /**
+     * Мощность устройства
+     **/
 
     int appliancePower();
 
-    /** прибор включен в сеть?**/
+    /**
+     * прибор включен в сеть?
+     **/
 
     boolean applianceIsOn();
 
-    /**Кухонный прибор**/
+    /**
+     * Кухонный прибор
+     **/
 
-   boolean applianceIsKitchen();
+    boolean applianceIsKitchen();
 
-    /** Вес устройства**/
+    /**
+     * Вес устройства
+     **/
 
     int weightOfAppliance();
 
