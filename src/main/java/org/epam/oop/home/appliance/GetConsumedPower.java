@@ -9,7 +9,7 @@ public class GetConsumedPower {
                 consumedPower += device.appliancePower();
             }
         }
-        sb.append("\n Power of devices included in the network: " + consumedPower);
+        sb.append("\n Consumed power of devices included in the network: " + consumedPower);
         return sb.toString();
 
     }

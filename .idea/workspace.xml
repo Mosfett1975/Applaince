@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da0d3bab-f001-4d2a-88d7-aeea3f8ea7f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/GetConsumedPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homeElectroDevices.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Appliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Appliance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/IDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/IDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Run.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
