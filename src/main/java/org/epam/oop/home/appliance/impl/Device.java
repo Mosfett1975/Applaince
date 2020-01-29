@@ -1,4 +1,7 @@
-package org.epam.oop.home.appliance;
+package org.epam.oop.home.appliance.impl;
+
+import org.epam.oop.home.appliance.intfc.IDevice;
+import org.epam.oop.home.appliance.applianceType.TypeOfDevice;
 
 public class Device implements IDevice {
 
@@ -8,16 +11,15 @@ public class Device implements IDevice {
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
 
-    private TypeOfDevice typeOfDevice;
-    private int powerOfAppliance;
-    private int weightOfAppliance;
-    private boolean stateOfAppliance;
-    private boolean kitchenAppliance;
+    protected TypeOfDevice typeOfDevice;
+    protected int powerOfAppliance;
+    protected int weightOfAppliance;
+    protected boolean stateOfAppliance;
+    protected boolean kitchenAppliance;
 
 
     public Device(TypeOfDevice typeOfDevice, int powerOfAppliance, int weightOfAppliance, boolean stateOfAppliance,
                   boolean kitchenAppliance) {
-        super();
         this.typeOfDevice = typeOfDevice;
         this.powerOfAppliance = powerOfAppliance;
         this.weightOfAppliance = weightOfAppliance;
@@ -57,11 +59,4 @@ public class Device implements IDevice {
     public int compareTo(IDevice o) {
         return 0;
     }
-
-    @Override
-    public Device clone() throws CloneNotSupportedException {
-        return (Device) super.clone();
-    }
-
-
 }

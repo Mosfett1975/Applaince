@@ -1,6 +1,6 @@
 package org.epam.oop.home.appliance.sort.of.appliance;
 
-import org.epam.oop.home.appliance.IDevice;
+import org.epam.oop.home.appliance.intfc.IDevice;
 
 import java.util.Comparator;
 

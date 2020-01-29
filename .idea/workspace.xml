@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da0d3bab-f001-4d2a-88d7-aeea3f8ea7f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Appliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Appliance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Appliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/defenitionApliance/Appliance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/impl/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/GetConsumedPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/calc/GetConsumedPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/IDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/intfc/IDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/TypeOfDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/applianceType/TypeOfDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByKitchen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByKitchen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByStateOfDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByStateOfDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/epam/oop/home/appliance/sort/of/appliance/SortingByWeight.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +54,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/GITLAB/LoanInsurance" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,6 +90,19 @@
   <component name="RunManager" selected="Application.Run (1)">
     <configuration name="Run" type="Application" factoryName="Application">
       <module name="homeElectroDevices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.epam.oop.home.appliance.Run" />
+      <module name="homeElectroDevices" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.epam.oop.home.appliance.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,13 +198,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.Run" />
-      <item itemvalue="Application.Run (1)" />
       <item itemvalue="Maven.homeElectroDevices [install]" />
+      <item itemvalue="Application.Run (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Run (1)" />
-        <item itemvalue="Application.Run (1)" />
         <item itemvalue="Application.Run (1)" />
         <item itemvalue="Maven.homeElectroDevices [install]" />
       </list>

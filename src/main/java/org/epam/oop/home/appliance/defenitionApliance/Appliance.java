@@ -1,24 +1,17 @@
-package org.epam.oop.home.appliance;
+package org.epam.oop.home.appliance.defenitionApliance;
+
+import org.epam.oop.home.appliance.applianceType.TypeOfDevice;
+import org.epam.oop.home.appliance.impl.Device;
 
 public class Appliance extends Device {
 
-    private String name;
-    private TypeOfDevice typeOfDevice;
-    private int powerOfAppliance;
-    private int weightOfAppliance;
-    private boolean stateOfAppliance;
-    private boolean kitchenAppliance;
-
+    public String name;
 
     public Appliance(TypeOfDevice typeOfDevice, String name, int powerOfAppliance, int weightOfAppliance,
                      boolean stateOfAppliance, boolean kitchenAppliance) {
         super(typeOfDevice, powerOfAppliance, weightOfAppliance, stateOfAppliance, kitchenAppliance);
         this.name = name;
-        this.typeOfDevice = typeOfDevice;
-        this.powerOfAppliance = powerOfAppliance;
-        this.weightOfAppliance = weightOfAppliance;
-        this.stateOfAppliance = stateOfAppliance;
-        this.kitchenAppliance = kitchenAppliance;
+
     }
 
     public static Appliance[] getDevices() {

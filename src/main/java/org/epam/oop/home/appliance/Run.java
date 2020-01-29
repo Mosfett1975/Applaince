@@ -1,5 +1,7 @@
 package org.epam.oop.home.appliance;
 
+import org.epam.oop.home.appliance.calc.GetConsumedPower;
+import org.epam.oop.home.appliance.defenitionApliance.Appliance;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByPower;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByKitchen;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByStateOfDevice;

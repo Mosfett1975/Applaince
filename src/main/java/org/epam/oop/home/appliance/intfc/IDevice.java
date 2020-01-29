@@ -1,4 +1,4 @@
-package org.epam.oop.home.appliance;
+package org.epam.oop.home.appliance.intfc;
 
 public interface IDevice extends Comparable<IDevice> {
 
