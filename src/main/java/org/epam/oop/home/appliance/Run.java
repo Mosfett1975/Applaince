@@ -2,6 +2,7 @@ package org.epam.oop.home.appliance;
 
 import org.epam.oop.home.appliance.calc.GetConsumedPower;
 import org.epam.oop.home.appliance.defenitionApliance.Appliance;
+import org.epam.oop.home.appliance.powerSupervisor.Supervisor;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByPower;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByKitchen;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByStateOfDevice;
@@ -12,7 +13,7 @@ import java.util.Arrays;
 public class Run {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Appliance[] dev = Appliance.getDevices();
 
         System.out.println("Сортировка приборов по мощности");
@@ -27,7 +28,7 @@ public class Run {
         System.out.println("\n Сортировка приборов по принадлежности к кухонным приборам");
         Arrays.sort(dev, new SortingByKitchen());
         Arrays.asList(dev).forEach(System.out::println);
-        System.out.println(GetConsumedPower.getPower(dev));
+        Supervisor.supervisor(GetConsumedPower.getPower(dev));
 
 
     }

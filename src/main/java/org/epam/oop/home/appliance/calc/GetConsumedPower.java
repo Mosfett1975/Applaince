@@ -4,7 +4,7 @@ import org.epam.oop.home.appliance.defenitionApliance.Appliance;
 import org.epam.oop.home.appliance.intfc.IDevice;
 
 public class GetConsumedPower {
-    public static String getPower(Appliance[] dev) {
+    public static int getPower(Appliance[] dev) {
         StringBuilder sb = new StringBuilder();
         int consumedPower = 0;
         for (IDevice device : dev) {
@@ -13,7 +13,7 @@ public class GetConsumedPower {
             }
         }
         sb.append("\n Consumed power of devices included in the network: " + consumedPower);
-        return sb.toString();
+        return consumedPower;
 
     }
 }
