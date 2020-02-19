@@ -2,8 +2,11 @@ package org.epam.oop.home.appliance.defenitionApliance;
 
 import org.epam.oop.home.appliance.applianceType.TypeOfDevice;
 import org.epam.oop.home.appliance.impl.Device;
+import org.epam.oop.home.appliance.randomizer.PowerRandom;
 
 public class Appliance extends Device {
+
+
 
     public String name;
 
@@ -15,15 +18,15 @@ public class Appliance extends Device {
     }
 
     public static Appliance[] getDevices() {
-        Appliance tvSet = new Appliance(TypeOfDevice.TV, " Sony kdl-40wd653", 100,
+        Appliance tvSet = new Appliance(TypeOfDevice.TV, " Sony kdl-40wd653", PowerRandom.powerRandom(),
                 3, false, false);
-        Appliance deskTop = new Appliance(TypeOfDevice.COMPUTER, " AMD K-6 Desktop", 1000,
+        Appliance deskTop = new Appliance(TypeOfDevice.COMPUTER, " AMD K-6 Desktop", PowerRandom.powerRandom(),
                 8, true, false);
-        Appliance laptop = new Appliance(TypeOfDevice.COMPUTER, " Laptop SONY VAIO Tap 11", 300,
+        Appliance laptop = new Appliance(TypeOfDevice.COMPUTER, " Laptop SONY VAIO Tap 11", PowerRandom.powerRandom(),
                 2, false, false);
-        Appliance microwave = new Appliance(TypeOfDevice.MICROWAVE, " Midea AM820CMF", 1500,
+        Appliance microwave = new Appliance(TypeOfDevice.MICROWAVE, " Midea AM820CMF", PowerRandom.powerRandom(),
                 10, true, true);
-        Appliance stove = new Appliance(TypeOfDevice.STOVE, " Electrolux IPE 6453", 7000,
+        Appliance stove = new Appliance(TypeOfDevice.STOVE, " Electrolux IPE 6453", PowerRandom.powerRandom(),
                 15, true, true);
 
 
@@ -39,7 +42,7 @@ public class Appliance extends Device {
     @Override
     public String toString() {
         return ANSI_GREEN + "Device type:" + typeOfDevice + "\t" + ANSI_RED + "Name of device:" + name + "\t"
-                + ANSI_PURPLE + "Power:" + powerOfAppliance + "\t" + ANSI_BLUE + "Weight:" + weightOfAppliance
+                + ANSI_PURPLE + "Power:" + getPowerOfAppliance() + "\t" + ANSI_BLUE + "Weight:" + weightOfAppliance
                 + "\t" + ANSI_RED + "Device is On?:" + stateOfAppliance + "\t" + ANSI_CYAN + "Device is kitchen?:"
                 + kitchenAppliance;
     }
