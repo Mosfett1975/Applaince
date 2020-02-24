@@ -19,15 +19,15 @@ public class Appliance extends Device {
 
     public static Appliance[] getDevices() {
         Appliance tvSet = new Appliance(TypeOfDevice.TV, " Sony kdl-40wd653", PowerRandom.powerRandom(),
-                3, false, false);
+                3, PowerRandom.randomBoolean(),  PowerRandom.randomBoolean());
         Appliance deskTop = new Appliance(TypeOfDevice.COMPUTER, " AMD K-6 Desktop", PowerRandom.powerRandom(),
-                8, true, false);
+                8,  PowerRandom.randomBoolean(),  PowerRandom.randomBoolean());
         Appliance laptop = new Appliance(TypeOfDevice.COMPUTER, " Laptop SONY VAIO Tap 11", PowerRandom.powerRandom(),
-                2, false, false);
+                2,  PowerRandom.randomBoolean(),  PowerRandom.randomBoolean());
         Appliance microwave = new Appliance(TypeOfDevice.MICROWAVE, " Midea AM820CMF", PowerRandom.powerRandom(),
-                10, true, true);
+                10,  PowerRandom.randomBoolean(),  PowerRandom.randomBoolean());
         Appliance stove = new Appliance(TypeOfDevice.STOVE, " Electrolux IPE 6453", PowerRandom.powerRandom(),
-                15, true, true);
+                15,  PowerRandom.randomBoolean(),  PowerRandom.randomBoolean());
 
 
         Appliance[] dev = new Appliance[5];

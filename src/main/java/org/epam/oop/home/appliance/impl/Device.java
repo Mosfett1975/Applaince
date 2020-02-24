@@ -11,7 +11,7 @@ public class Device implements IDevice {
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
 
-    protected TypeOfDevice typeOfDevice;
+    public TypeOfDevice typeOfDevice;
     private int powerOfAppliance;
     protected int weightOfAppliance;
     protected boolean stateOfAppliance;
@@ -77,6 +77,14 @@ public class Device implements IDevice {
 
     public void setStateOfAppliance(boolean stateOfAppliance) {
         this.stateOfAppliance = stateOfAppliance;
+    }
+
+    public boolean isKitchenAppliance() {
+        return kitchenAppliance;
+    }
+
+    public void setKitchenAppliance(boolean kitchenAppliance) {
+        this.kitchenAppliance = kitchenAppliance;
     }
 }
 

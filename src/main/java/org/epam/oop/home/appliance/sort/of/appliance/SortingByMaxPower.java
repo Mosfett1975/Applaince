@@ -8,7 +8,7 @@ import java.util.Comparator;
  * Сортировка по мощьности приболра с помощью компаратора
  **/
 
-public class SortingByPower implements Comparator<IDevice> {
+public class SortingByMaxPower implements Comparator<IDevice> {
     @Override
     public int compare(IDevice o1, IDevice o2) {
         if (o1.appliancePower() > o2.appliancePower()) {
