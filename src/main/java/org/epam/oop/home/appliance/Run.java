@@ -14,6 +14,7 @@ import org.epam.oop.home.appliance.sort.of.appliance.SortingByStateOfDevice;
 import org.epam.oop.home.appliance.sort.of.appliance.SortingByWeight;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Run {
 
@@ -39,7 +40,23 @@ public class Run {
         finally {
             screenOut(dev);
         }
+
+        /**
+         MultiCatch
+         **/
+        try {
+            dev[1].setWeightOfAppliance(10/ new Random().nextInt(2));
+            dev[10].setStateOfAppliance(false);
+        }catch (ArithmeticException e) {
+            System.out.println("Деление на ноль, значение переменной установленно равным 0");
+            dev[1].setWeightOfAppliance(0);
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Размер массива превышен. Размер массива = " + dev.length);
+
+        }
     }
+
+
 
     private static void screenOut(Appliance[] dev) {
         System.out.println("\n");

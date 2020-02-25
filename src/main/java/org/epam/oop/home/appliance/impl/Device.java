@@ -13,6 +13,9 @@ public class Device implements IDevice {
 
     public TypeOfDevice typeOfDevice;
     private int powerOfAppliance;
+
+
+
     protected int weightOfAppliance;
     protected boolean stateOfAppliance;
     protected boolean kitchenAppliance;
@@ -85,6 +88,14 @@ public class Device implements IDevice {
 
     public void setKitchenAppliance(boolean kitchenAppliance) {
         this.kitchenAppliance = kitchenAppliance;
+    }
+
+    public int getWeightOfAppliance() {
+        return weightOfAppliance;
+    }
+
+    public void setWeightOfAppliance(int weightOfAppliance) {
+        this.weightOfAppliance = weightOfAppliance;
     }
 }
 
