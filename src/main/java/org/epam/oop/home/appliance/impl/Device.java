@@ -5,23 +5,16 @@ import org.epam.oop.home.appliance.applianceType.TypeOfDevice;
 
 public class Device implements IDevice {
 
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_GREEN = "\u001B[32m";
-    public static final String ANSI_BLUE = "\u001B[34m";
-    public static final String ANSI_PURPLE = "\u001B[35m";
-    public static final String ANSI_CYAN = "\u001B[36m";
-
+    protected static final String ANSI_RED = "\u001B[31m";
+    protected static final String ANSI_GREEN = "\u001B[32m";
+    protected static final String ANSI_BLUE = "\u001B[34m";
+    protected static final String ANSI_PURPLE = "\u001B[35m";
+    protected static final String ANSI_CYAN = "\u001B[36m";
     public TypeOfDevice typeOfDevice;
-    private int powerOfAppliance;
-
-
-
+    protected int powerOfAppliance;
     protected int weightOfAppliance;
     protected boolean stateOfAppliance;
     protected boolean kitchenAppliance;
-
-
-
 
     public Device(TypeOfDevice typeOfDevice, int powerOfAppliance, int weightOfAppliance, boolean stateOfAppliance,
                   boolean kitchenAppliance) {
@@ -66,15 +59,15 @@ public class Device implements IDevice {
     }
 
 
-    public void setPowerOfAppliance(int powerOfAppliance) {
+    private void setPowerOfAppliance(int powerOfAppliance) {
         this.powerOfAppliance = powerOfAppliance;
     }
 
-    public int getPowerOfAppliance() {
+    protected int getPowerOfAppliance() {
         return powerOfAppliance;
     }
 
-    public boolean getStateOfAppliance() {
+    private boolean getStateOfAppliance() {
         return stateOfAppliance;
     }
 
@@ -88,10 +81,6 @@ public class Device implements IDevice {
 
     public void setKitchenAppliance(boolean kitchenAppliance) {
         this.kitchenAppliance = kitchenAppliance;
-    }
-
-    public int getWeightOfAppliance() {
-        return weightOfAppliance;
     }
 
     public void setWeightOfAppliance(int weightOfAppliance) {

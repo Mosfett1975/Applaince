@@ -8,7 +8,7 @@ import java.util.Arrays;
 Последовательное отключение нагрузки, начиная с самой маломощной
  **/
 
-public class SequenceSwitchOff {
+public final class SequenceSwitchOff {
 
     public static void getMaxArray(Appliance[] dev) {
 

@@ -4,7 +4,7 @@ import org.epam.oop.home.appliance.MyException.KitchqnException;
 import org.epam.oop.home.appliance.defenitionApliance.Appliance;
 import static org.epam.oop.home.appliance.applianceType.TypeOfDevice.*;
 
-public class KitchenDevice {
+public final class KitchenDevice {
 
     public static void kitchen(Appliance[] dev) throws KitchqnException {
 

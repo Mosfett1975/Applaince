@@ -52,7 +52,6 @@ public class Run {
             dev[1].setWeightOfAppliance(0);
         }catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Размер массива превышен. Размер массива = " + dev.length);
-
         }
     }
 
