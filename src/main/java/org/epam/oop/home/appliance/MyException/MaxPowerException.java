@@ -1,11 +1,10 @@
 package org.epam.oop.home.appliance.MyException;
 
-public  class MaxPowerException extends Exception{
-    private int number;
+public final class MaxPowerException extends Exception{
 
-    public MaxPowerException(String message, int num){
+
+    public MaxPowerException(String message){
         super(message);
-        number = num;
     }
 
 }

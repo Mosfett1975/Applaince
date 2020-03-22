@@ -1,6 +1,6 @@
 package org.epam.oop.home.appliance;
 
-import org.epam.oop.home.appliance.MyException.KitchqnException;
+import org.epam.oop.home.appliance.MyException.KitchenException;
 import org.epam.oop.home.appliance.MyException.MaxPowerException;
 import org.epam.oop.home.appliance.Supervisor.KitchenDevice;
 import org.epam.oop.home.appliance.Supervisor.KitchenMatching;
@@ -24,7 +24,7 @@ public class Run {
 
         try {
             KitchenDevice.kitchen(dev);
-        } catch (KitchqnException e) {
+        } catch (KitchenException e) {
             System.out.println("Исправим пренадлежность к кухонным приборам");
             KitchenMatching.kitchenMatching(dev);
         }

@@ -8,6 +8,6 @@ public final class PowerSupervisor {
 
     public static void supervisor(int totalPower) throws MaxPowerException {
         if (totalPower > maxPower) throw new MaxPowerException("При текущей нагрузке, выше " + maxPower/1000 +
-                                            "кВт, линия будет перегружена", maxPower);
+                                            "кВт, линия будет перегружена");
     }
 }
